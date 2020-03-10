@@ -1,0 +1,261 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #232931;
+  font-family: "Poppins", sans-serif;
+}
+html header,
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background: #393e46;
+  box-sizing: border-box;
+  border-bottom: 1px solid #4ecca3;
+}
+html header > div,
+body header > div {
+  height: 25px;
+}
+html header .logo-container,
+body header .logo-container {
+  display: flex;
+  padding-left: 18px;
+}
+html header .logo-container > img,
+body header .logo-container > img {
+  height: 100%;
+}
+html header .logo-container h3,
+body header .logo-container h3 {
+  font-size: 18pt;
+}
+html header .current-user,
+body header .current-user {
+  display: flex;
+  width: 75px;
+  padding-right: 18px;
+  justify-content: space-between;
+  align-items: center;
+}
+html header .current-user > img,
+body header .current-user > img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+html header .current-user h3,
+body header .current-user h3 {
+  margin: 0;
+  color: #ffffff;
+}
+html main,
+body main {
+  height: 100%;
+  width: 100%;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+html main h1,
+body main h1 {
+  color: #ffffff;
+  font-size: 20pt;
+}
+html main hr,
+body main hr {
+  display: block;
+  border-color: #4ecca3;
+}
+html main .match-container,
+body main .match-container {
+  display: flex;
+  margin: 10px 0;
+  padding: 5px;
+  height: 120px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #393e46;
+  border-radius: 10px;
+}
+html main .match-container > div,
+body main .match-container > div {
+  flex: 1;
+  max-width: 33%;
+}
+html main .match-container .team-red .svg-filler,
+body main .match-container .team-red .svg-filler {
+  filter: invert(48%) sepia(38%) saturate(3757%) hue-rotate(331deg) brightness(102%) contrast(88%);
+}
+html main .match-container .team-red p,
+body main .match-container .team-red p {
+  color: #ef5753;
+}
+html main .match-container .team-blue .svg-filler,
+body main .match-container .team-blue .svg-filler {
+  filter: invert(68%) sepia(17%) saturate(1479%) hue-rotate(174deg) brightness(97%) contrast(90%);
+}
+html main .match-container .team-blue p,
+body main .match-container .team-blue p {
+  color: #6cb2eb;
+}
+html main .match-container .players-container,
+body main .match-container .players-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html main .match-container .players-container .player-top,
+body main .match-container .players-container .player-top {
+  align-self: flex-start;
+}
+html main .match-container .players-container .player-bottom,
+body main .match-container .players-container .player-bottom {
+  align-items: flex-end;
+}
+html main .match-container .players-container .player-container,
+body main .match-container .players-container .player-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+}
+html main .match-container .players-container .player-container .image-container,
+body main .match-container .players-container .player-container .image-container {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+html main .match-container .players-container .player-container img,
+body main .match-container .players-container .player-container img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+html main .match-container .players-container .player-container .player-content,
+body main .match-container .players-container .player-container .player-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+}
+html main .match-container .players-container .player-container .player-content > p,
+body main .match-container .players-container .player-container .player-content > p {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+html main .match-container .players-container .player-container .player-content div,
+body main .match-container .players-container .player-container .player-content div {
+  display: flex;
+  align-items: center;
+}
+html main .match-container .players-container .player-container .player-content div img,
+body main .match-container .players-container .player-container .player-content div img {
+  height: 12px;
+  width: 12px;
+}
+html main .match-container .players-container .player-container .player-content div p,
+body main .match-container .players-container .player-container .player-content div p {
+  margin: 0;
+  padding: 0 0 0 5px;
+  font-size: 10px;
+}
+html main .match-container .players-right .player-container,
+body main .match-container .players-right .player-container {
+  justify-content: flex-end;
+}
+html main .match-container .players-right .player-container .player-content,
+body main .match-container .players-right .player-container .player-content {
+  text-align: right;
+}
+html main .match-container .players-right .player-container .player-content > div,
+body main .match-container .players-right .player-container .player-content > div {
+  justify-content: flex-end;
+}
+html main .match-container .players-right .image-container,
+body main .match-container .players-right .image-container {
+  order: 2;
+}
+html main .match-container .info,
+body main .match-container .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+html main .match-container .info p,
+body main .match-container .info p {
+  margin: 0;
+}
+html main .match-container .info .live,
+body main .match-container .info .live {
+  display: flex;
+  width: 40px;
+  border: 1px solid #ef5753;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+}
+html main .match-container .info .live > span,
+body main .match-container .info .live > span {
+  height: 4px;
+  width: 4px;
+  background-color: #ef5753;
+  border-radius: 50%;
+}
+html main .match-container .info .live > p,
+body main .match-container .info .live > p {
+  color: #ef5753;
+  font-size: 10pt;
+  font-family: "Poppins", SemiBold;
+}
+html main .match-container .info .score,
+body main .match-container .info .score {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+html main .match-container .info .score .score-number,
+body main .match-container .info .score .score-number {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 36pt;
+}
+html main .match-container .info .score .vertical,
+body main .match-container .info .score .vertical {
+  height: 40px;
+  width: 1px;
+  margin: 0 18px;
+  background-color: #4ecca3;
+  align-self: center;
+}
+html main .match-container .info .time p,
+body main .match-container .info .time p {
+  color: #ffffff;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 12pt;
+}
+html main button,
+body main button {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  height: 40px;
+  width: calc(100% - 18px * 2);
+  color: white;
+  background-color: #4ecca3;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+html main button::before,
+body main button::before {
+  content: "+";
+  padding: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
