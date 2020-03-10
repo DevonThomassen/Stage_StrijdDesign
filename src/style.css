@@ -190,7 +190,7 @@ body main .matches-container .match-container .players-container .player-contain
 html main .matches-container .match-container .players-container .player-container .player-content div p,
 body main .matches-container .match-container .players-container .player-container .player-content div p {
   margin: 0;
-  padding: 0 0 0 5px;
+  padding: 0 0 0 2px;
   font-size: 10px;
 }
 html main .matches-container .match-container .players-right .player-container,
@@ -250,7 +250,7 @@ body main .matches-container .match-container .info .score {
 }
 html main .matches-container .match-container .info .score .score-number,
 body main .matches-container .match-container .info .score .score-number {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 36pt;
 }
 html main .matches-container .match-container .info .score .vertical,
@@ -264,7 +264,7 @@ body main .matches-container .match-container .info .score .vertical {
 html main .matches-container .match-container .info .time p,
 body main .matches-container .match-container .info .time p {
   color: #ffffff;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12pt;
 }
 html footer,
