@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="shortcut icon" type='image/x-icon' href="../assets/favicon.ico"/>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,408 +17,496 @@
     </div>
     <div class="current-user">
       <img src="../assets/grayscale-photo-of-woman-2120114.jpg" alt="Emily">
-      <h3>Emily</h3>
+      <p>Emily</p>
     </div>
   </header>
   <main>
 
-    <h1>Live Matches</h1>
+    <div class="matches-container matches-live">
+      <h1>Live Matches</h1>
 
-    <hr>
-    </hr>
+      <hr>
+      </hr>
 
-    <div class="match-container">
+      <div class="match-container">
 
-      <div class="players-container players-left team-red">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/grayscale-photo-of-woman-2120114.jpg" alt="Emily">
+        <div class="players-container players-left team-red">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Emily" src="../assets/grayscale-photo-of-woman-2120114.jpg" alt="Emily">
+            </div>
+            <div class="player-content">
+              <p>Emily</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
           </div>
-          <div class="player-content">
-            <p>Emily</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Chris" src="../assets/man-wearing-blue-crew-neck-t-shirt-2379005.jpg" alt="Chris">
+            </div>
+            <div class="player-content">
+              <p>Chris</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/man-wearing-blue-crew-neck-t-shirt-2379005.jpg" alt="Chris">
+
+        <div class="info">
+          <div class="live">
+            <span></span>
+            <p>Live</p>
           </div>
-          <div class="player-content">
-            <p>Chris</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
+          <div class="score">
+            <div class="score-number team-red">
+              <p>4</p>
+            </div>
+            <div class="vertical"></div>
+            <div class="score-number team-blue">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="time">
+            <p>12:34</p>
+          </div>
+        </div>
+
+        <div class="players-container players-right team-blue">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Amanda" src="../assets/adult-attractive-beautiful-beauty-415829.jpg" alt="Amanda">
+            </div>
+            <div class="player-content">
+              <p>Amanda</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
+          </div>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Edwin" src="../assets/face-facial-hair-fine-looking-guy-614810.jpg" alt="Edwin">
+            </div>
+            <div class="player-content">
+              <p>Edwin</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
 
-      <div class="info">
-        <div class="live">
-          <span></span>
-          <p>Live</p>
-        </div>
-        <div class="score">
-          <div class="score-number team-red">
-            <p>4</p>
-          </div>
-          <div class="vertical"></div>
-          <div class="score-number team-blue">
-            <p>2</p>
-          </div>
-        </div>
-        <div class="time">
-          <p>12:34</p>
-        </div>
-      </div>
+      <div class="match-container">
 
-      <div class="players-container players-right team-blue">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/adult-attractive-beautiful-beauty-415829.jpg" alt="Amanda">
+        <div class="players-container players-left team-red">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Amanda" src="../assets/adult-attractive-beautiful-beauty-415829.jpg" alt="Amanda">
+            </div>
+            <div class="player-content">
+              <p>Amanda</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
           </div>
-          <div class="player-content">
-            <p>Amanda</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Chris" src="../assets/man-wearing-blue-crew-neck-t-shirt-2379005.jpg" alt="Chris">
+            </div>
+            <div class="player-content">
+              <p>Chris</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/face-facial-hair-fine-looking-guy-614810.jpg" alt="Edwin">
+
+        <div class="info">
+          <div class="live">
+            <span></span>
+            <p>Live</p>
           </div>
-          <div class="player-content">
-            <p>Edwin</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
+          <div class="score">
+            <div class="score-number team-red">
+              <p>3</p>
+            </div>
+            <div class="vertical"></div>
+            <div class="score-number team-blue">
+              <p>3</p>
+            </div>
+          </div>
+          <div class="time">
+            <p>12:34</p>
+          </div>
+        </div>
+
+        <div class="players-container players-right team-blue">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Edwin" src="../assets/face-facial-hair-fine-looking-guy-614810.jpg" alt="Edwin">
+            </div>
+            <div class="player-content">
+              <p>Edwin</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
+          </div>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Emily" src="../assets/grayscale-photo-of-woman-2120114.jpg" alt="Emily">
+            </div>
+            <div class="player-content">
+              <p>Emily</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-    </div>
-    <div class="match-container">
-
-      <div class="players-container players-left team-red">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/adult-attractive-beautiful-beauty-415829.jpg" alt="Amanda">
-          </div>
-          <div class="player-content">
-            <p>Amanda</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
-            </div>
-          </div>
-        </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/man-wearing-blue-crew-neck-t-shirt-2379005.jpg" alt="Chris">
-          </div>
-          <div class="player-content">
-            <p>Chris</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="info">
-        <div class="live">
-          <span></span>
-          <p>Live</p>
-        </div>
-        <div class="score">
-          <div class="score-number team-red">
-            <p>3</p>
-          </div>
-          <div class="vertical"></div>
-          <div class="score-number team-blue">
-            <p>3</p>
-          </div>
-        </div>
-        <div class="time">
-          <p>12:34</p>
-        </div>
-      </div>
-
-      <div class="players-container players-right team-blue">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/face-facial-hair-fine-looking-guy-614810.jpg" alt="Edwin">
-          </div>
-          <div class="player-content">
-            <p>Edwin</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
-            </div>
-          </div>
-        </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/grayscale-photo-of-woman-2120114.jpg" alt="Emily">
-          </div>
-          <div class="player-content">
-            <p>Emily</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <h1>Recent Matches</h1>
-
-    <hr>
-    </hr>
-
-    <div class="match-container">
-
-      <div class="players-container players-left team-red">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/white-short-coated-dog-160846.jpg" alt="Thijs">
-          </div>
-          <div class="player-content">
-            <p>Thijs</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
-            </div>
-          </div>
-        </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/white-and-black-owl-1804976.jpg" alt="Floor">
-          </div>
-          <div class="player-content">
-            <p>Floor</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="info">
-        <div class="live">
-          <span></span>
-          <p>Live</p>
-        </div>
-        <div class="score">
-          <div class="score-number team-red">
-            <p>4</p>
-          </div>
-          <div class="vertical"></div>
-          <div class="score-number team-blue">
-            <p>5</p>
-          </div>
-        </div>
-        <div class="time">
-          <p>12:34</p>
-        </div>
-      </div>
-
-      <div class="players-container players-right team-blue">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/boston-terrier-wearing-unicorn-pet-costume-1564506.jpg" alt="Jamie">
-          </div>
-          <div class="player-content">
-            <p>Jamie</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
-            </div>
-          </div>
-        </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/animal-ape-banana-cute-321552.jpg" alt="Devon">
-          </div>
-          <div class="player-content">
-            <p>Devon</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
 
-    <div class="match-container">
+    <div class="matches-container matches-recent">
+      <h1>Recent Matches</h1>
 
-      <div class="players-container players-left team-red">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/boston-terrier-wearing-unicorn-pet-costume-1564506.jpg" alt="Jamie">
+      <hr>
+      </hr>
+
+      <div class="match-container">
+
+        <div class="players-container players-left team-red">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Thijs" src="../assets/white-short-coated-dog-160846.jpg" alt="Thijs">
+            </div>
+            <div class="player-content">
+              <p>Thijs</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
           </div>
-          <div class="player-content">
-            <p>Jamie</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Floor" src="../assets/white-and-black-owl-1804976.jpg" alt="Floor">
+            </div>
+            <div class="player-content">
+              <p>Floor</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/white-short-coated-dog-160846.jpg" alt="Thijs">
+
+        <div class="info">
+          <div class="live">
+            <span></span>
+            <p>Live</p>
           </div>
-          <div class="player-content">
-            <p>Thijs</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
+          <div class="score">
+            <div class="score-number team-red">
+              <p>4</p>
+            </div>
+            <div class="vertical"></div>
+            <div class="score-number team-blue">
+              <p>5</p>
+            </div>
+          </div>
+          <div class="time">
+            <p>12:34</p>
+          </div>
+        </div>
+
+        <div class="players-container players-right team-blue">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Jamie" src="../assets/boston-terrier-wearing-unicorn-pet-costume-1564506.jpg" alt="Jamie">
+            </div>
+            <div class="player-content">
+              <p>Jamie</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
+          </div>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Devon" src="../assets/animal-ape-banana-cute-321552.jpg" alt="Devon">
+            </div>
+            <div class="player-content">
+              <p>Devon</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
 
-      <div class="info">
-        <div class="live">
-          <span></span>
-          <p>Live</p>
-        </div>
-        <div class="score">
-          <div class="score-number team-red">
-            <p>5</p>
-          </div>
-          <div class="vertical"></div>
-          <div class="score-number team-blue">
-            <p>0</p>
-          </div>
-        </div>
-        <div class="time">
-          <p>12:34</p>
-        </div>
-      </div>
+      <div class="match-container">
 
-      <div class="players-container players-right team-blue">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/white-and-black-owl-1804976.jpg" alt="Steve">
+        <div class="players-container players-left team-red">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Jamie" src="../assets/boston-terrier-wearing-unicorn-pet-costume-1564506.jpg" alt="Jamie">
+            </div>
+            <div class="player-content">
+              <p>Jamie</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
           </div>
-          <div class="player-content">
-            <p>Steve</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Thijs" src="../assets/white-short-coated-dog-160846.jpg" alt="Thijs">
+            </div>
+            <div class="player-content">
+              <p>Thijs</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/animal-ape-banana-cute-321552.jpg" alt="Devon">
+
+        <div class="info">
+          <div class="live">
+            <span></span>
+            <p>Live</p>
           </div>
-          <div class="player-content">
-            <p>Devon</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
+          <div class="score">
+            <div class="score-number team-red">
+              <p>5</p>
+            </div>
+            <div class="vertical"></div>
+            <div class="score-number team-blue">
+              <p>0</p>
+            </div>
+          </div>
+          <div class="time">
+            <p>12:34</p>
+          </div>
+        </div>
+
+        <div class="players-container players-right team-blue">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Steve" src="../assets/white-and-black-owl-1804976.jpg" alt="Steve">
+            </div>
+            <div class="player-content">
+              <p>Steve</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
+          </div>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Devon" src="../assets/animal-ape-banana-cute-321552.jpg" alt="Devon">
+            </div>
+            <div class="player-content">
+              <p>Devon</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
 
+      <div class="match-container">
+
+        <div class="players-container players-left team-red">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Floor" src="../assets/white-and-black-owl-1804976.jpg" alt="Floor">
+            </div>
+            <div class="player-content">
+              <p>Floor</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
+          </div>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Devon" src="../assets/animal-ape-banana-cute-321552.jpg" alt="Devon">
+            </div>
+            <div class="player-content">
+              <p>Devon</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="live">
+            <span></span>
+            <p>Live</p>
+          </div>
+          <div class="score">
+            <div class="score-number team-red">
+              <p>0</p>
+            </div>
+            <div class="vertical"></div>
+            <div class="score-number team-blue">
+              <p>5</p>
+            </div>
+          </div>
+          <div class="time">
+            <p>12:34</p>
+          </div>
+        </div>
+
+        <div class="players-container players-right team-blue">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Thijs" src="../assets/white-short-coated-dog-160846.jpg" alt="Thijs">
+            </div>
+            <div class="player-content">
+              <p>Thijs</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
+          </div>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Jamie" src="../assets/boston-terrier-wearing-unicorn-pet-costume-1564506.jpg" alt="Jamie">
+            </div>
+            <div class="player-content">
+              <p>Jamie</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="match-container">
+
+        <div class="players-container players-left team-red">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Devon" src="../assets/34390233Devin.jpg" alt="Devon">
+            </div>
+            <div class="player-content">
+              <p>Devon</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
+          </div>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Devon" src="../assets/34390233Devin.jpg" alt="Devon">
+            </div>
+            <div class="player-content">
+              <p>Devon</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="live">
+            <span></span>
+            <p>Live</p>
+          </div>
+          <div class="score">
+            <div class="score-number team-red">
+              <p>1</p>
+            </div>
+            <div class="vertical"></div>
+            <div class="score-number team-blue">
+              <p>0</p>
+            </div>
+          </div>
+          <div class="time">
+            <p>12:34</p>
+          </div>
+        </div>
+
+        <div class="players-container players-right team-blue">
+          <div class="player-container player-top">
+            <div class="image-container">
+              <img data-person="Devon" src="../assets/34390233Devin.jpg" alt="Devon">
+            </div>
+            <div class="player-content">
+              <p>Devon</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
+                <p>ATTACK</p>
+              </div>
+            </div>
+          </div>
+          <div class="player-container player-bottom">
+            <div class="image-container">
+              <img data-person="Devon" src="../assets/34390233Devin.jpg" alt="Devon">
+            </div>
+            <div class="player-content">
+              <p>Devon</p>
+              <div>
+                <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
+                <p>DEFENSE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="match-container">
-
-      <div class="players-container players-left team-red">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/white-and-black-owl-1804976.jpg" alt="Floor">
-          </div>
-          <div class="player-content">
-            <p>Floor</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
-            </div>
-          </div>
-        </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/animal-ape-banana-cute-321552.jpg" alt="Devon">
-          </div>
-          <div class="player-content">
-            <p>Devon</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="info">
-        <div class="live">
-          <span></span>
-          <p>Live</p>
-        </div>
-        <div class="score">
-          <div class="score-number team-red">
-            <p>0</p>
-          </div>
-          <div class="vertical"></div>
-          <div class="score-number team-blue">
-            <p>5</p>
-          </div>
-        </div>
-        <div class="time">
-          <p>12:34</p>
-        </div>
-      </div>
-
-      <div class="players-container players-right team-blue">
-        <div class="player-container player-top">
-          <div class="image-container">
-            <img src="../assets/white-short-coated-dog-160846.jpg" alt="Thijs">
-          </div>
-          <div class="player-content">
-            <p>Thijs</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-battle-fixed.svg" alt="battle_svg">
-              <p>ATTACK</p>
-            </div>
-          </div>
-        </div>
-        <div class="player-container player-bottom">
-          <div class="image-container">
-            <img src="../assets/boston-terrier-wearing-unicorn-pet-costume-1564506.jpg" alt="Jamie">
-          </div>
-          <div class="player-content">
-            <p>Jamie</p>
-            <div>
-              <img class="svg-filler" src="../assets/icons8-defense-fixed.svg" alt="defender_svg">
-              <p>DEFENSE</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <button>New match</button>
 
   </main>
+  <footer>
+    <div></div>
+    <div class="button-container">
+      <button>New match</button>
+    </button>
+  </foot>
 </body>
 
 </html>

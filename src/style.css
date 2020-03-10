@@ -6,23 +6,41 @@ body {
   font-family: "Poppins", sans-serif;
 }
 html header,
-body header {
+html main,
+html footer,
+body header,
+body main,
+body footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
-  background: #393e46;
+  width: 100%;
+  padding: 0 40px;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+html header > div,
+html main > div,
+html footer > div,
+body header > div,
+body main > div,
+body footer > div {
+  flex: 1;
+  max-width: 650px;
+}
+html header,
+body header {
+  height: 70px;
+  background: #393e46;
   border-bottom: 1px solid #4ecca3;
 }
 html header > div,
 body header > div {
-  height: 25px;
+  height: 50px;
 }
 html header .logo-container,
 body header .logo-container {
   display: flex;
-  padding-left: 18px;
 }
 html header .logo-container > img,
 body header .logo-container > img {
@@ -36,40 +54,48 @@ html header .current-user,
 body header .current-user {
   display: flex;
   width: 75px;
-  padding-right: 18px;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 html header .current-user > img,
 body header .current-user > img {
-  height: 20px;
-  width: 20px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
+  padding: 0 10px;
 }
-html header .current-user h3,
-body header .current-user h3 {
+html header .current-user p,
+body header .current-user p {
   margin: 0;
   color: #ffffff;
+  font-size: 22pt;
 }
 html main,
 body main {
   height: 100%;
-  width: 100%;
-  padding: 0 18px;
-  box-sizing: border-box;
+  align-items: flex-start;
 }
-html main h1,
-body main h1 {
+html main .matches-container.matches-live,
+body main .matches-container.matches-live {
+  margin-right: 9px;
+}
+html main .matches-container.matches-recent,
+body main .matches-container.matches-recent {
+  margin-left: 9px;
+}
+html main .matches-container h1,
+body main .matches-container h1 {
   color: #ffffff;
-  font-size: 20pt;
+  font-size: 22pt;
+  font-weight: 400;
 }
-html main hr,
-body main hr {
+html main .matches-container hr,
+body main .matches-container hr {
   display: block;
   border-color: #4ecca3;
 }
-html main .match-container,
-body main .match-container {
+html main .matches-container .match-container,
+body main .matches-container .match-container {
   display: flex;
   margin: 10px 0;
   padding: 5px;
@@ -79,118 +105,123 @@ body main .match-container {
   background-color: #393e46;
   border-radius: 10px;
 }
-html main .match-container > div,
-body main .match-container > div {
+html main .matches-container .match-container > div,
+body main .matches-container .match-container > div {
   flex: 1;
   max-width: 33%;
 }
-html main .match-container .team-red .svg-filler,
-body main .match-container .team-red .svg-filler {
+html main .matches-container .match-container .team-red .svg-filler,
+body main .matches-container .match-container .team-red .svg-filler {
   filter: invert(48%) sepia(38%) saturate(3757%) hue-rotate(331deg) brightness(102%) contrast(88%);
 }
-html main .match-container .team-red p,
-body main .match-container .team-red p {
+html main .matches-container .match-container .team-red p,
+body main .matches-container .match-container .team-red p {
   color: #ef5753;
 }
-html main .match-container .team-blue .svg-filler,
-body main .match-container .team-blue .svg-filler {
+html main .matches-container .match-container .team-blue .svg-filler,
+body main .matches-container .match-container .team-blue .svg-filler {
   filter: invert(68%) sepia(17%) saturate(1479%) hue-rotate(174deg) brightness(97%) contrast(90%);
 }
-html main .match-container .team-blue p,
-body main .match-container .team-blue p {
+html main .matches-container .match-container .team-blue p,
+body main .matches-container .match-container .team-blue p {
   color: #6cb2eb;
 }
-html main .match-container .players-container,
-body main .match-container .players-container {
+html main .matches-container .match-container .players-container,
+body main .matches-container .match-container .players-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html main .match-container .players-container .player-top,
-body main .match-container .players-container .player-top {
+html main .matches-container .match-container .players-container .player-top,
+body main .matches-container .match-container .players-container .player-top {
   align-self: flex-start;
 }
-html main .match-container .players-container .player-bottom,
-body main .match-container .players-container .player-bottom {
+html main .matches-container .match-container .players-container .player-bottom,
+body main .matches-container .match-container .players-container .player-bottom {
   align-items: flex-end;
 }
-html main .match-container .players-container .player-container,
-body main .match-container .players-container .player-container {
+html main .matches-container .match-container .players-container .player-container,
+body main .matches-container .match-container .players-container .player-container {
   display: flex;
   flex: 1;
   width: 100%;
   align-items: center;
 }
-html main .match-container .players-container .player-container .image-container,
-body main .match-container .players-container .player-container .image-container {
+html main .matches-container .match-container .players-container .player-container .image-container,
+body main .matches-container .match-container .players-container .player-container .image-container {
   display: flex;
   align-self: center;
   justify-self: center;
 }
-html main .match-container .players-container .player-container img,
-body main .match-container .players-container .player-container img {
+html main .matches-container .match-container .players-container .player-container img,
+body main .matches-container .match-container .players-container .player-container img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
 }
-html main .match-container .players-container .player-container .player-content,
-body main .match-container .players-container .player-container .player-content {
+html main .matches-container .match-container .players-container .player-container img[data-person=Chris],
+body main .matches-container .match-container .players-container .player-container img[data-person=Chris] {
+  object-position: center;
+}
+html main .matches-container .match-container .players-container .player-container .player-content,
+body main .matches-container .match-container .players-container .player-container .player-content {
   display: flex;
   flex-direction: column;
   padding: 0 5px;
 }
-html main .match-container .players-container .player-container .player-content > p,
-body main .match-container .players-container .player-container .player-content > p {
+html main .matches-container .match-container .players-container .player-container .player-content > p,
+body main .matches-container .match-container .players-container .player-container .player-content > p {
   margin: 0;
   padding: 0;
   color: #ffffff;
   font-size: 18px;
+  line-height: 0.9;
 }
-html main .match-container .players-container .player-container .player-content div,
-body main .match-container .players-container .player-container .player-content div {
+html main .matches-container .match-container .players-container .player-container .player-content div,
+body main .matches-container .match-container .players-container .player-container .player-content div {
   display: flex;
   align-items: center;
 }
-html main .match-container .players-container .player-container .player-content div img,
-body main .match-container .players-container .player-container .player-content div img {
+html main .matches-container .match-container .players-container .player-container .player-content div img,
+body main .matches-container .match-container .players-container .player-container .player-content div img {
   height: 12px;
   width: 12px;
 }
-html main .match-container .players-container .player-container .player-content div p,
-body main .match-container .players-container .player-container .player-content div p {
+html main .matches-container .match-container .players-container .player-container .player-content div p,
+body main .matches-container .match-container .players-container .player-container .player-content div p {
   margin: 0;
   padding: 0 0 0 5px;
   font-size: 10px;
 }
-html main .match-container .players-right .player-container,
-body main .match-container .players-right .player-container {
+html main .matches-container .match-container .players-right .player-container,
+body main .matches-container .match-container .players-right .player-container {
   justify-content: flex-end;
 }
-html main .match-container .players-right .player-container .player-content,
-body main .match-container .players-right .player-container .player-content {
+html main .matches-container .match-container .players-right .player-container .player-content,
+body main .matches-container .match-container .players-right .player-container .player-content {
   text-align: right;
 }
-html main .match-container .players-right .player-container .player-content > div,
-body main .match-container .players-right .player-container .player-content > div {
+html main .matches-container .match-container .players-right .player-container .player-content > div,
+body main .matches-container .match-container .players-right .player-container .player-content > div {
   justify-content: flex-end;
 }
-html main .match-container .players-right .image-container,
-body main .match-container .players-right .image-container {
+html main .matches-container .match-container .players-right .image-container,
+body main .matches-container .match-container .players-right .image-container {
   order: 2;
 }
-html main .match-container .info,
-body main .match-container .info {
+html main .matches-container .match-container .info,
+body main .matches-container .match-container .info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-html main .match-container .info p,
-body main .match-container .info p {
+html main .matches-container .match-container .info p,
+body main .matches-container .match-container .info p {
   margin: 0;
 }
-html main .match-container .info .live,
-body main .match-container .info .live {
+html main .matches-container .match-container .info .live,
+body main .matches-container .match-container .info .live {
   display: flex;
   width: 40px;
   border: 1px solid #ef5753;
@@ -198,51 +229,57 @@ body main .match-container .info .live {
   align-items: center;
   border-radius: 5px;
 }
-html main .match-container .info .live > span,
-body main .match-container .info .live > span {
+html main .matches-container .match-container .info .live > span,
+body main .matches-container .match-container .info .live > span {
   height: 4px;
   width: 4px;
   background-color: #ef5753;
   border-radius: 50%;
 }
-html main .match-container .info .live > p,
-body main .match-container .info .live > p {
+html main .matches-container .match-container .info .live > p,
+body main .matches-container .match-container .info .live > p {
   color: #ef5753;
   font-size: 10pt;
   font-family: "Poppins", SemiBold;
 }
-html main .match-container .info .score,
-body main .match-container .info .score {
+html main .matches-container .match-container .info .score,
+body main .matches-container .match-container .info .score {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-html main .match-container .info .score .score-number,
-body main .match-container .info .score .score-number {
+html main .matches-container .match-container .info .score .score-number,
+body main .matches-container .match-container .info .score .score-number {
   font-family: "Open-Sans", sans-serif;
   font-size: 36pt;
 }
-html main .match-container .info .score .vertical,
-body main .match-container .info .score .vertical {
+html main .matches-container .match-container .info .score .vertical,
+body main .matches-container .match-container .info .score .vertical {
   height: 40px;
   width: 1px;
-  margin: 0 18px;
+  margin: 0 25px;
   background-color: #4ecca3;
   align-self: center;
 }
-html main .match-container .info .time p,
-body main .match-container .info .time p {
+html main .matches-container .match-container .info .time p,
+body main .matches-container .match-container .info .time p {
   color: #ffffff;
   font-family: "Open-Sans", sans-serif;
   font-size: 12pt;
 }
-html main button,
-body main button {
-  position: fixed;
-  left: 50%;
-  bottom: 20px;
-  height: 40px;
-  width: calc(100% - 18px * 2);
+html footer,
+body footer {
+  left: 0;
+  bottom: 0;
+  height: 100px;
+}
+html footer .button-container,
+body footer .button-container {
+  text-align: right;
+}
+html footer .button-container button,
+body footer .button-container button {
+  padding: 0 30px;
   color: white;
   background-color: #4ecca3;
   font-size: 20px;
@@ -250,12 +287,83 @@ body main button {
   border: none;
   border-radius: 25px;
   box-sizing: border-box;
-  transform: translateX(-50%);
+  cursor: pointer;
 }
-html main button::before,
-body main button::before {
+html footer .button-container button::before,
+body footer .button-container button::before {
   content: "+";
-  padding: 18px;
+  padding-right: 20px;
+}
+html img:not(.svg-filler),
+body img:not(.svg-filler) {
+  object-fit: cover;
+  object-position: top;
+}
+
+@media only screen and (max-width: 600px) {
+  html header,
+html main,
+html footer,
+body header,
+body main,
+body footer {
+    padding: 0 18px;
+  }
+  html header div,
+html main div,
+html footer div,
+body header div,
+body main div,
+body footer div {
+    max-width: 600px;
+  }
+  html header,
+body header {
+    height: 40px;
+  }
+  html header > div,
+body header > div {
+    height: 25px;
+  }
+  html header .current-user > img,
+body header .current-user > img {
+    height: 20px;
+    width: 20px;
+  }
+  html header .current-user p,
+body header .current-user p {
+    font-size: 18px;
+  }
+  html main,
+body main {
+    display: block;
+  }
+  html main .matches-container.matches-live, html main .matches-container.matches-recent,
+body main .matches-container.matches-live,
+body main .matches-container.matches-recent {
+    margin: 0;
+  }
+  html main .matches-container h1,
+body main .matches-container h1 {
+    font-size: 20pt;
+  }
+  html main .matches-container .match-container .info .score .score-number,
+body main .matches-container .match-container .info .score .score-number {
+    font-size: 36pt;
+  }
+  html main .matches-container .match-container .info .score .vertical,
+body main .matches-container .match-container .info .score .vertical {
+    margin: 0 18px;
+  }
+  html footer button,
+body footer button {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    height: 40px;
+    width: calc(100% - 18px * 2);
+    transform: translateX(-50%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
